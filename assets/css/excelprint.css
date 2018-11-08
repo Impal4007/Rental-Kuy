@@ -1,0 +1,35 @@
+.excelButton{
+    float: right;
+	margin-left: 10px !important;
+}
+
+.buttons-print{
+    float: right;
+	margin-left: 10px !important;
+}
+
+.dataTables_wrapper .dt-buttons {
+    float: right;
+    margin-top: 0px !important;
+}
+
+#globaldatatable_length {
+    float: left;
+}
+
+#globaldatatable_info {
+    float: left;
+} 
+
+#globaldatatable_filter {
+    float: right;
+}  
+
+#globaldatatable_paginate {
+    float: right;
+}
+
+thead {
+    background-color: #17C4BB !important;
+    color: white !important;
+}
