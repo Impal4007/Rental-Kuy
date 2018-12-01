@@ -35,6 +35,16 @@
                     </div>
                     <div class="form-group mb-2">
                       <div class="input-group border-0">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">
+                            <i class="now-ui-icons users_circle-08 lg"></i>
+                          </span>
+                        </div>
+                        <input class="form-control" id="inlineFormInputGroup" placeholder="ALAMAT" style="background-color:#efeded; font-size:12px" type="text" name="alamat">
+                      </div>
+                    </div>
+                    <div class="form-group mb-2">
+                      <div class="input-group border-0">
                         <div class="input-group-prepend ">
                           <span class="input-group-text" id="basic-addon1">
                             <i class="now-ui-icons text_caps-small lg"></i>

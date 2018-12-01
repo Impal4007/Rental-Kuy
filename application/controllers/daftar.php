@@ -6,6 +6,8 @@ class daftar extends CI_Controller{
 	function __construct(){
 		parent::__construct();		
 		$this->load->model('register');
+		$this->load->model('ModelAccount');
+
 		$this->load->helper('url');
 
 	}
@@ -20,20 +22,33 @@ class daftar extends CI_Controller{
 
 	function tambah_aksi(){
 		$nama = $this->input->post('nama');
-		$sim = $this->input->post('sim');
+		$alamat = $this->input->post('alamat');
+		$nosim = $this->input->post('sim');
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');
 
 		$data = array(
+			'alamat' => $alamat,
+			'nosim' => $nosim,
 			'nama' => $nama,
 			'email' => $email,
-			'noktp' => $sim,
 			'password' => $password
 			);
 
-		$this->register->input_data($data,'user');
+		$this->register->input_data($data,'pelanggan');
 		$data['regis'] = ('1');
         $this->load->view('Login',$data);
 	}
 
+	function editp(){
+		$email = $_SESSION["eml"];
+		$password = $this->input->post('password');
+		$data = array(
+			'password' => $password
+			);
+
+		$this->ModelAccount->editp($email,$data);
+		$data['regis'] = ('1');
+        $this->load->view('Login',$data);
+	}
 }

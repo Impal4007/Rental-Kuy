@@ -21,7 +21,7 @@
               </h5>
               <div class="row mt-4 pt-2">
                 <div class="col">
-                  <form action="<?php echo base_url(). 'login/aksi_login'; ?>" method="post">
+                  <form action="<?php echo base_url(). 'login/user'; ?>" method="post">
                     <div class="form-group mb-2">
                       <div class="input-group border-0">
                         <div class="input-group-prepend ">
@@ -52,6 +52,7 @@
               <a>PENDAFTARAN BERHASIL</a>    
             <?php } else {?>
               <a style="color: red">PASSWORD / EMAIL ANDA SALAH</a>    
+              <a class="p-2 text-primary" href="<?php echo base_url();?>daftar">Belum punya akun? klik disini</a>    
 
             <?php } ?>
             </div>

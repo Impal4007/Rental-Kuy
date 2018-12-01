@@ -24,30 +24,84 @@
       <div class="row px-2">
         <div class="col mx-2 bg-dark pt-5 px-5 mb-3">
           <h2 class="mt-3">New Toyota Avanza</h2>
+          <?php
+            $total = 0;
+            foreach ($mobil->result() as $row) {
+              if ($row->jenis==1){
+                $total = $total + 1;
+              }
+            }
+            echo "<h2 class='mt-3'>Total Unit ".$total." </h2>";
+          ?>
           <img class="img-fluid d-block" src="<?php echo base_url();?>assets/img/Avanza1.png" width="" style="">
         </div>
         <div class="col mx-2 pt-5 px-5 bg-primary mb-3">
           <h2 class="mt-3"><b>New Toyota Avanza</b></h2>
+          <?php
+            $total = 0;
+            foreach ($mobil->result() as $row) {
+              if ($row->jenis==1){
+                $total = $total + 1;
+              }
+            }
+            echo "<h2 class='mt-3'>Total Unit ".$total." </h2>";
+          ?>
           <img class="img-fluid d-block" src="<?php echo base_url();?>assets/img/Avanza2.png" width="">
         </div>
       </div>
       <div class="row px-2">
         <div class="col mx-2 pt-5 px-5 mb-3 bg-light">
           <h2 class="mt-3"><b>Honda HR-V</b></h2>
+          <?php
+            $total = 0;
+            foreach ($mobil->result() as $row) {
+              if ($row->jenis==2){
+                $total = $total + 1;
+              }
+            }
+            echo "<h2 class='mt-3'>Total Unit ".$total." </h2>";
+          ?>
           <img class="img-fluid d-block" src="<?php echo base_url();?>assets/img/hrv2.png" width="">
         </div>
         <div class="col mx-2 pt-5 px-5 mb-3 bg-secondary">
           <h2 class="mt-3"><b>Honda HR-V</b></h2>
+          <?php
+            $total = 0;
+            foreach ($mobil->result() as $row) {
+              if ($row->jenis==2){
+                $total = $total + 1;
+              }
+            }
+            echo "<h2 class='mt-3'>Total Unit ".$total." </h2>";
+          ?>
           <img class="img-fluid d-block" src="<?php echo base_url();?>assets/img/hrv1.png" width="">
         </div>
       </div>
       <div class="row px-2">
         <div class="col mx-2 pt-5 px-5 mb-3 bg-info">
           <h2 class="mt-3"><b>Suzuki Ertiga</b></h2>
+          <?php
+            $total = 0;
+            foreach ($mobil->result() as $row) {
+              if ($row->jenis==3){
+                $total = $total + 1;
+              }
+            }
+            echo "<h2 class='mt-3'>Total Unit ".$total." </h2>";
+          ?>
           <img class="img-fluid d-block" src="<?php echo base_url();?>assets/img/ertiga2.png" width="">
         </div>
         <div class="col mx-2 pt-5 px-5 mb-3 bg-primary">
           <h2 class="mt-3">Suzuki Ertiga</h2>
+          <?php
+            $total = 0;
+            foreach ($mobil->result() as $row) {
+              if ($row->jenis==3){
+                $total = $total + 1;
+              }
+            }
+            echo "<h2 class='mt-3'>Total Unit ".$total." </h2>";
+          ?>
           <img class="img-fluid d-block" src="<?php echo base_url();?>assets/img/ertiga1.png" width="">
         </div>
       </div>
@@ -61,7 +115,7 @@
           <h3>Rental Mobil</h3>
           <p class="text-muted">November 3 2018</p>
           <p class="my-3">Pesona Bali</p>
-          <a class="btn btn-lg btn-primary shadowed" href="#">Register now</a>
+          <a class="btn btn-lg btn-primary shadowed" href="<?php echo base_url();?>daftar">Register now</a>
         </div>
         <div class="my-3 col-lg-4 col-md-6">
           <h3>Contact us</h3>
